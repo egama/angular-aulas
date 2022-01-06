@@ -1,0 +1,9 @@
+<app-header [titulo]="meuTitulo" (doMenuClicado)="acaoMenuClicado($event)"></app-header>
+
+
+<h1 class="primeiraClasse">{{nomeProduto}}</h1>
+<p class="primeiraClasse">Compra Realizada com sucesso!</p>
+
+<p *ngFor="let pro of produtos">{{pro.descricao}} - {{pro.grupo}}</p>
+
+<button (click)="acaoBotao('Elivelton')" >Comprar</button>
